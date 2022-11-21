@@ -632,26 +632,26 @@
   }
   /*running a new test mail sender  */
   // listen to the form submission
-  document
-    .getElementById("myForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
+//   document
+//     .getElementById("myForm")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault();
 
-      const serviceID = "service_83rfs5n";
-      const templateID = "template_42dz7gp";
+//       const serviceID = "service_83rfs5n";
+//       const templateID = "template_42dz7gp";
 
-      // send the email here
-      emailjs.sendForm(serviceID, templateID, this).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          alert("FAILED...", error);
-        }
-      );
-    });
+//       // send the email here
+//       emailjs.sendForm(serviceID, templateID, this).then(
+//         (response) => {
+//           console.log("SUCCESS!", response.status, response.text);
+//           alert("SUCCESS!");
+//         },
+//         (error) => {
+//           console.log("FAILED...", error);
+//           alert("FAILED...", error);
+//         }
+//       );
+//     });
 
   /*==========================================================================
         WHEN DOCUMENT LOADING
