@@ -37,6 +37,16 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--Contact email script link -->
+    <script src="index.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("2ruK2p1FQJoN_B68B");
+        })();
+    </script>
 
 </head>
 
@@ -183,7 +193,7 @@
                 <div class="row">
                     <div class="col col-lg-6">
                         <div class="contact-form">
-                            <form method="post"  class="contact-validation-active" id="contact-form-s2"> 
+                            <form  method="post" class="contact-validation-active"> <!--id="contact-form-s2"-->
                                 <div class="half-col">
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
                                 </div>
@@ -200,7 +210,7 @@
                                     <textarea class="form-control" name="note"  id="note" placeholder="Description..."></textarea>
                                 </div>
                                 <div class="submit-btn-wrapper">
-                                    <button type="submit" class="theme-btn-s3">Send Details</button>
+                                    <button type="submit" onclick="sendMail()" class="theme-btn-s3">Send Details</button>
                                     <div id="loader">
                                         <i class="ti-reload"></i>
                                     </div>
